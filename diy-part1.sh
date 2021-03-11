@@ -13,5 +13,8 @@
 # Uncomment a feed source
 #sed -i 's/^#\(.*helloworld\)/\1/' feeds.conf.default
 
+#解决olsrd模块编译错误;
+rm -rf package/feeds/routing/olsrd/patches/012-gpsd.patch
+
 # Add a feed source
 #sed -i '$a src-git lienol https://github.com/Lienol/openwrt-package' feeds.conf.default

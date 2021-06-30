@@ -19,6 +19,9 @@ on:
   workflow_dispatch:
   schedule:
     - cron: 0 */18 * * *
+  ## 当有提交、有issue创建时触发;
+  issues:
+    types: [opened]
 
 jobs:
   check:

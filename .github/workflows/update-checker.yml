@@ -56,3 +56,10 @@ jobs:
       with:
         retain_days: 7
         keep_minimum_runs: 7
+    
+    # 删除无用 workflow runs;
+    - name: Delete workflow runs
+      uses: GitRML/delete-workflow-runs@main
+      with:
+        retain_days: 2
+        keep_minimum_runs: 1

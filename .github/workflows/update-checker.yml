@@ -42,11 +42,11 @@ jobs:
         key: HEAD-${{ steps.getHash.outputs.commitHash }}
 
     - name: Save New Commit Hash
-      if: steps.cacheHash.outputs.cache-hit != 'true'
+      if: steps.cacheHash.outputs.cache-hit != 'false'
       run: |
         echo ${{ steps.getHash.outputs.commitHash }} | tee .commitHash
     - name: Trigger build
-      if: steps.cacheHash.outputs.cache-hit != 'true'
+      if: steps.cacheHash.outputs.cache-hit != 'false'
       uses: peter-evans/repository-dispatch@v1
       with:
         token: ${{ secrets.GITHUB_TOKEN }}

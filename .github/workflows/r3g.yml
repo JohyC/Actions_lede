@@ -12,6 +12,7 @@ name: Build Mi R3G OpenWrt
 
 on:
   repository_dispatch:
+    types: [Source Code Update]
   workflow_dispatch:
     inputs:
       ssh:

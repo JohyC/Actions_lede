@@ -10,7 +10,7 @@
 
 name: Build Amlogic S905X3 OpenWrt
 on:
-  repository_dispatch:
+#  repository_dispatch:
   workflow_dispatch:
     inputs:
       ssh:

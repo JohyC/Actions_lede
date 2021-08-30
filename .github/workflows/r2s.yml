@@ -11,7 +11,7 @@
 name: Build NanoPi R2S OpenWrt
 
 on:
-  repository_dispatch:
+#  repository_dispatch:
   workflow_dispatch:
     inputs:
       ssh:

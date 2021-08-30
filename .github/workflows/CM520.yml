@@ -11,7 +11,7 @@
 name: Build 星际宝盒 CM520 OpenWrt
 
 on:
-  repository_dispatch:
+#  repository_dispatch:
   workflow_dispatch:
     inputs:
       ssh:

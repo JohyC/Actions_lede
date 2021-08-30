@@ -11,7 +11,7 @@
 name: Build 友华 WR1200JS OpenWrt
 
 on:
-  repository_dispatch:
+#  repository_dispatch:
   workflow_dispatch:
     inputs:
       ssh:

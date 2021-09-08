@@ -58,11 +58,3 @@ jobs:
       with:
         retain_days: 7
         keep_minimum_runs: 1
-        
-    - name: Remove old Releases
-      uses: dev-drprasad/delete-older-releases@v0.2.0
-      with:
-        keep_latest: 2
-        delete_tags: false
-      env:
-        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}

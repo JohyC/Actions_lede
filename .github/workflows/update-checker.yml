@@ -51,8 +51,12 @@ jobs:
       with:
         token: ${{ secrets.ACTIONS_TRIGGER_PAT }}
         event-type: SourceCodeUpdate
-    
-    # 删除无用 workflow runs;
+        
+# 删除无用 workflow runs;
+delete_old:
+  name: Delete workflow runs
+  runs-on: ubuntu-last
+  steps:
     - name: Delete workflow runs
       uses: Mattraks/delete-workflow-runs@main
       with:

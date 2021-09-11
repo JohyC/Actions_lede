@@ -20,4 +20,3 @@
 
 # clear cache
 make clean
-make dirclean

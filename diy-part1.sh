@@ -19,5 +19,5 @@
 #sed -i '$a src-git MrH723 https://github.com/MrH723/openwrt-packages' feeds.conf.default
 
 #编译ax3600
-rm target/linux/ipq807x/config-5.10
-wget https://raw.githubusercontent.com/JohyC/Actions_lede/main/AX3600/config-5.10 -O target/linux/ipq807x/config-5.10
+#rm target/linux/ipq807x/config-5.10
+#wget https://raw.githubusercontent.com/JohyC/Actions_lede/main/AX3600/config-5.10 -O target/linux/ipq807x/config-5.10

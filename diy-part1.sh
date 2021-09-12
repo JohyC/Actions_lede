@@ -20,4 +20,4 @@
 
 #编译ax3600
 rm target/linux/ipq807x/config-5.10
-cp AX3600/config-5.10 target/linux/ipq807x/config-5.10
+wget https://raw.githubusercontent.com/JohyC/Actions_lede/main/AX3600/config-5.10 -O target/linux/ipq807x/config-5.10

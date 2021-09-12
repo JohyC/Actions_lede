@@ -17,3 +17,5 @@
 #sed -i '$a src-git lienol https://github.com/Lienol/openwrt-package' feeds.conf.default
 #git clone https://github.com/MrH723/openwrt-packages.git package/openwrt-packages
 #sed -i '$a src-git MrH723 https://github.com/MrH723/openwrt-packages' feeds.conf.default
+rm target/linux/ipq807x/config-5.10
+cp ../AX3600/config-5.10 target/linux/ipq807x/config-5.10

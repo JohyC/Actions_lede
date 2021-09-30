@@ -19,5 +19,6 @@ export imsize1=$(expr $imsize1 + 2)
 export imsize1=$(echo $imsize1"s")
 sed -i "$imsize1/IMAGE_SIZE := .*/IMAGE_SIZE := 16064k/" target/linux/ramips/image/mt7621.mk
 
-git clone https://github.com/walkingsky/luci-wifidog.git && mv luci-wifidog luci-app-wifidog
+git clone https://github.com/walkingsky/luci-wifidog.git
+mv luci-wifidog luci-app-wifidog
 mv luci-app-wifidog package/feeds/luci/luci-app-wifidog

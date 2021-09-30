@@ -21,7 +21,10 @@ sed -i "$imsize1/IMAGE_SIZE := .*/IMAGE_SIZE := 16064k/" target/linux/ramips/ima
 
 git clone https://github.com/walkingsky/luci-wifidog.git 
 mv luci-wifidog luci-app-wifidog 
-mv luci-app-wifidog /workdir/openwrt/package/feeds/luci/luci-app-wifidog
+
 
 ls -la
 pwd
+
+mv luci-app-wifidog /workdir/openwrt/package/feeds/luci/luci-app-wifidog
+

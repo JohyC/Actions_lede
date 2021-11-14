@@ -21,7 +21,7 @@ on:
 
 
 env:
-  REPO_URL: https://github.com/JohyC/Actions-build-OpenWRT-lede-Source-code
+  REPO_URL: https://github.com/JohyC/lede-Source-code
   REPO_BRANCH: master
   FEEDS_CONF: feeds.conf.default
   CONFIG_FILE: config/Ax3600_160MHz_WIFI.config

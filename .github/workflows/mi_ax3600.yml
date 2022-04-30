@@ -11,7 +11,7 @@
 name: Build Xiaomi AX3600 OpenWrt
 
 on:
-  repository_dispatch:
+#   repository_dispatch:
   workflow_dispatch:
     inputs:
       ssh:

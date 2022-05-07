@@ -11,7 +11,7 @@
 name: Build Ax3600_160MHz_WIFI OpenWrt
 
 on:
-#   repository_dispatch:
+  repository_dispatch:
   workflow_dispatch:
     inputs:
       ssh:
@@ -21,7 +21,7 @@ on:
 
 
 env:
-  REPO_URL: https://github.com/JohyC/lede-Source-code.git
+  REPO_URL: https://github.com/Boos4721/openwrt.git
   REPO_BRANCH: master
   FEEDS_CONF: feeds.conf.default
   CONFIG_FILE: config/Ax3600_160MHz_WIFI.config

@@ -18,6 +18,8 @@
 #git clone https://github.com/MrH723/openwrt-packages.git package/openwrt-packages
 #sed -i '$a src-git MrH723 https://github.com/MrH723/openwrt-packages' feeds.conf.default
 
-#编译ax3600
-#rm target/linux/ipq807x/config-5.10
-#wget https://raw.githubusercontent.com/JohyC/Actions_lede/main/AX3600/config-5.10 -O target/linux/ipq807x/config-5.10
+# fix upx ucl 不存在;
+apt install subversion -y
+svn export --force https://github.com/coolsnowwolf/lede/trunk/tools/upx tools/upx
+svn export --force https://github.com/coolsnowwolf/lede/trunk/tools/ucl tools/ucl
+echo -e '\ntools-y += ucl upx \n$(curdir)/upx/compile := $(curdir)/ucl/compile' >> tools/Makefile

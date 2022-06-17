@@ -16,9 +16,3 @@
 #解决olsrd模块编译错误;
 rm -rf package/feeds/routing/olsrd/patches/012-gpsd.patch
 
-# fix upx ucl 不存在;
-apt install subversion -y
-svn export --force https://github.com/coolsnowwolf/lede/trunk/tools/upx tools/upx
-svn export --force https://github.com/coolsnowwolf/lede/trunk/tools/ucl tools/ucl
-echo -e '\ntools-y += ucl upx \n$(curdir)/upx/compile := $(curdir)/ucl/compile' >> tools/Makefile
-

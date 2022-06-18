@@ -22,4 +22,13 @@
 apt install subversion -y
 svn export --force https://github.com/coolsnowwolf/lede/trunk/tools/upx tools/upx
 svn export --force https://github.com/coolsnowwolf/lede/trunk/tools/ucl tools/ucl
-echo -e '\ntools-y += ucl upx \n$(curdir)/upx/compile := $(curdir)/ucl/compile' >> tools/Makefile
+
+n=`sed -n '/^tools-y +=/{p;q}' tools/Makefile`
+sed -i "/${n}/i\tools-y += ucl upx " tools/Makefile
+
+n=`sed -n '/^$(curdir)/{p;q}' tools/Makefile`
+str='$(curdir)/upx/compile := $(curdir)/ucl/compile'
+sed -i "/${n}/i\\${str}" tools/Makefile
+
+# 
+
